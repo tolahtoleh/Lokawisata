@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_kuliner"
+    tools:context=".KulinerActivity"
+    tools:ignore="HardcodedText">
+
+    <!-- Header Activity -->
+    <FrameLayout
+        android:background="@drawable/bg_header_kuliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="wisata kuliner"
+            android:textAppearance="@style/header_kategori" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+    <!-- Item Activity -->
+    <GridLayout
+        android:layout_gravity="center"
+        android:id="@+id/GridKuliner"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="4">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner1">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kampung_wijilan" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+
+                android:background="@color/bgTextKuliner"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="kampung wijilan"
+                android:textAppearance="@style/text_title" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner2">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pasar_lama" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextKuliner"
+                android:text="pasar lama" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner3">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kyakya" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextKuliner"
+                android:text="kya - kya"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+
+            android:id="@+id/cvKuliner4">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_surga_kencana" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextKuliner"
+                android:text="surya kencana"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner5">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_galabo" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextKuliner"
+                android:text="galabo" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner6">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_braga" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextKuliner"
+                android:text="braga" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner7">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_jalan_sabang" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextKuliner"
+                android:text="jalan sabang"
+                android:textAppearance="@style/text_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextKuliner"
+            android:id="@+id/cvKuliner8">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pencenongan" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextKuliner"
+                android:text="pencenongan" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

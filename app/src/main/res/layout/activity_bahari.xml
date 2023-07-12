@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bahari"
+    android:id="@+id/wisataBahari"
+    tools:context=".BahariActivity"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:background="@drawable/bg_header_bahari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="WISATA BAHARI"
+            android:textAppearance="@style/header_kategori" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:id="@+id/linear1"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="4">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari1">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pantai_tureloto" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+
+                android:background="@color/btTextWisataBahari"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="pantai tureloto"
+                android:textAppearance="@style/text_title" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari2">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_danau_biru_kaloka" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="danau biru kaloka" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari3">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kepulauan_derewan" />
+
+            <TextView
+
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="kepulauan derawan"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+
+            android:id="@+id/cvBahari4">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pantai_ora" />
+
+            <TextView
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="PANTAI ORA"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari5">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pantai_parai_tenggiri" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="pantai parai tenggiri" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari6">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kabupaten_raja_ampat" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="kabupaten raja ampat" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari7">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_pantai_nirwana" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="Pantai Nirwana" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/btTextWisataBahari"
+            android:id="@+id/cvBahari8">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_taman_nasional_bunaken" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@color/btTextWisataBahari"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="taman nasional bunaken" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

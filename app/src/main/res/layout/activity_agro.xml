@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_agro"
+    tools:context=".AgroActivity"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:background="@drawable/bg_header_agro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="agrowisata"
+            android:textAppearance="@style/header_kategori" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:id="@+id/GridAgro"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="4"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro1">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_bhumi_merapi" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+
+                android:background="@color/bgTextAgro"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="bhumi merapi"
+                android:textAppearance="@style/text_title" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro2">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kopeng_gunungsari" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAgro"
+                android:text="kopeng gunungsari" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro3">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kebun_raya_bogor" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextAgro"
+                android:text="kebun raya bogor"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+
+            android:id="@+id/cvAgro4">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_merapi_farma_herbal" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextAgro"
+                android:text="merapi farma herbal"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro5">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_taman_buah_mekarsari" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAgro"
+                android:text="taman buah mekarsari" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro6">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_bagus_agro_pelaga" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAgro"
+                android:text="bagus agro pelaga" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro7">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_milkindo_green_farm" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAgro"
+                android:text="milkindo green farm"
+                android:textAppearance="@style/text_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAgro"
+            android:id="@+id/cvAgro8">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_narmada_botanic_green" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAgro"
+                android:text="narmada botanic green" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

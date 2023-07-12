@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_budaya"
+    tools:context=".BudayaActivity"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:background="@drawable/bg_header_budaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="wisata budaya"
+            android:textAppearance="@style/header_kategori" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:id="@+id/GridBudaya"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="4">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya1">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_taman_ujung" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+
+                android:background="@color/bgTextBudaya"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="taman ujung"
+                android:textAppearance="@style/text_title" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya2">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_candi_borobudur" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextBudaya"
+                android:text="candi borobudur" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya3">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_istana_maimun" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextBudaya"
+                android:text="istana maimun"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+
+            android:id="@+id/cvBudaya4">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_museum_ullen_sentalu" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextBudaya"
+                android:text="museum ullen sentalu"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya5">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_ngarai_sianok" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextBudaya"
+                android:text="ngarai siamok" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya6">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kampung_adat_praijing" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextBudaya"
+                android:text="kampung adat praijing" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya7">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_wae_rebo_village" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextBudaya"
+                android:text="wae rebo village"
+                android:textAppearance="@style/text_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextBudaya"
+            android:id="@+id/cvBudaya8">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_tirta_gangga" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextBudaya"
+                android:text="tirta gangga" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

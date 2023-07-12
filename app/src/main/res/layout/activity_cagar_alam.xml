@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_alam"
+    tools:context=".CagarAlamActivity"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:background="@drawable/bg_header_alam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:id="@+id/viewBack"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="wisata cagar alam"
+            android:textAppearance="@style/header_kategori" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:id="@+id/GridAlam"
+        android:layout_margin="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:columnCount="4">
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam1">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_gunung_ijen" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+
+                android:background="@color/bgTextAlam"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:text="gunung ijen"
+                android:textAppearance="@style/text_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam2">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_gunung_leuseur" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAlam"
+                android:text="taman nasional gunung leuser" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam3">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_green_canyon_cukang_taneuh" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextAlam"
+                android:text="green canyon cukang taneuh"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+
+            android:id="@+id/cvAlam4">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_ujung_kulon" />
+
+            <TextView
+                android:textAppearance="@style/text_title"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:background="@color/bgTextAlam"
+                android:text="taman nasional ujung kulon"
+                android:paddingHorizontal="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam5">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_kerinci_seblat" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAlam"
+                android:text="taman nasional kerinci seblat" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam6">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_way_kambas" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAlam"
+                android:text="taman nasional way kambas" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam7">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_bukit_dua_belas" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAlam"
+                android:text="taman nasional bukit dua belas"
+                android:textAppearance="@style/text_title" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+
+            app:cardBackgroundColor="@color/bgTextAlam"
+            android:id="@+id/cvAlam8">
+
+            <ImageView
+                android:layout_width="@dimen/ImgCardWidth"
+                android:layout_height="@dimen/ImgCardHeight"
+                android:src="@drawable/img_bantimurung_bulusaraung" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/text_title"
+                android:layout_gravity="center|bottom"
+                android:gravity="center"
+                android:paddingHorizontal="10dp"
+                android:background="@color/bgTextAlam"
+                android:text="bantimurung bulusaraung" />
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

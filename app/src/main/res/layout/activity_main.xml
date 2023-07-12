@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <FrameLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/viewSearch"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_margin="20dp"
+            android:layout_width="53dp"
+            android:layout_height="43dp"
+            android:src="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="end|center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@color/navigasi"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:id="@+id/homeKategori1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_kategori"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="wisata bahari"
+                android:textAppearance="@style/text_title"/>
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:id="@+id/homeKategori2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_kategori"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textAppearance="@style/text_title"
+                android:textStyle="normal"
+                android:text="wisata budaya"/>
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:id="@+id/homeKategori3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_kategori"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textAppearance="@style/text_title"
+                android:text="agrowisata"/>
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:id="@+id/homeKategori4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_kategori"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textAppearance="@style/text_title"
+                android:text="wisata kuliner"/>
+
+            <TextView
+                android:focusableInTouchMode="true"
+                android:id="@+id/homeKategori5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/shape_kategori"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="wisata cagar alam"
+                android:textAppearance="@style/text_title"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/bgTextAlam"
+                android:id="@+id/cvAlam1">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_gunung_ijen" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|bottom"
+
+                    android:background="@color/bgTextAlam"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="gunung ijen"
+                    android:textAppearance="@style/text_title" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+
+                app:cardBackgroundColor="@color/bgTextKuliner"
+                android:id="@+id/cvKuliner5">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_galabo" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="@style/text_title"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:background="@color/bgTextKuliner"
+                    android:text="galabo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+
+                app:cardBackgroundColor="@color/btTextWisataBahari"
+                android:id="@+id/cvBahari6">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_kabupaten_raja_ampat" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:background="@color/btTextWisataBahari"
+                    android:textAppearance="@style/text_title"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="kabupaten raja ampat" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+
+                app:cardBackgroundColor="@color/bgTextAgro"
+                android:id="@+id/cvAgro6">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_bagus_agro_pelaga" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:textAppearance="@style/text_title"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:background="@color/bgTextAgro"
+                    android:text="bagus agro pelaga" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+
+                app:cardBackgroundColor="@color/bgTextBudaya"
+
+                android:id="@+id/cvBudaya6">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_museum_ullen_sentalu" />
+
+                <TextView
+                    android:textAppearance="@style/text_title"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center"
+                    android:background="@color/bgTextBudaya"
+                    android:text="museum ullen sentalu"
+                    android:paddingHorizontal="10dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_margin="20dp"
+                android:layout_marginEnd="10dp"
+                app:cardBackgroundColor="@color/bgTextAgro"
+                android:id="@+id/cvAgro1">
+
+                <ImageView
+                    android:layout_width="@dimen/ImgCardWidth"
+                    android:layout_height="@dimen/ImgCardHeight"
+                    android:src="@drawable/img_bhumi_merapi" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|bottom"
+
+                    android:background="@color/bgTextAgro"
+                    android:gravity="center"
+                    android:paddingHorizontal="10dp"
+                    android:text="bhumi merapi"
+                    android:textAppearance="@style/text_title" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

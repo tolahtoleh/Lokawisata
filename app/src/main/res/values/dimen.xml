@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ImgCardWidth"> 160dp </dimen>
+    <dimen name="ImgCardHeight"> 100dp </dimen>
+
+    <dimen name="TxtCardWidth"> 160sp </dimen>
+    <dimen name="TxtCardHeight"> 40sp </dimen>
+
+</resources>

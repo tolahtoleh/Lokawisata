@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white"> #FFF </color>
+    <color name="black"> #000 </color>
+
+    <!-- Color With saturation -->
+    <color name="white20"> #2FFF </color>
+    <color name="white40"> #66FFFFFF </color>
+    <color name="white60"> #92FFFFFF</color>
+    <color name="white80"> #CAFFFFFF </color>
+
+    <color name="black20"> #2000 </color>
+    <color name="black40"> #66000000 </color>
+    <color name="black60"> #92000000</color>
+    <color name="black80"> #CA000000</color>
+
+
+    <!-- Color Text Wisata Card -->
+    <color name="btTextWisataBahari"> #7BA1B7 </color>
+    <color name="bgTextBudaya">#E2C16B</color>
+    <color name="bgTextAgro">#A39E9E</color>
+    <color name="bgTextKuliner">#173939</color>
+    <color name="bgTextAlam">#527284</color>
+
+    <!-- Color Navigasi -->
+    <color name="navigasi"> #8CABA7 </color>
+</resources>
